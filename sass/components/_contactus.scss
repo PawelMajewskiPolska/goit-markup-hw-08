@@ -4,8 +4,13 @@
 	@media screen and (min-width: 768px) {
 		padding: 0;
 		display: flex;
+		flex-direction: column;
 		list-style: none;
-		justify-content: space-between;
+		justify-content: start;
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
 	}
 }
 
@@ -17,6 +22,7 @@
 
 .phone__link {
 	color: var(--brand-color6);
+	fill: var(--brand-color6);
 	text-decoration: none;
 	font-family: var(--font-family2);
 	font-size: 14px;
@@ -24,6 +30,7 @@
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	transition: var(--transition);
+	position: relative;
 
 	&:hover {
 		color: var(--brand-color1);
@@ -43,8 +50,10 @@
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--brand-color6);
+	fill: var(--brand-color6);
 	text-decoration: none;
 	transition: var(--transition);
+	position: relative;
 
 	&:hover {
 		color: var(--brand-color1);
@@ -69,24 +78,33 @@
 	font-style: normal;
 	transition: var(--transition);
 }
-.phone svg {
-	position: relative;
-	top: 2px;
-	right: 10px;
-}
 .icon-smartphone {
-	fill: var(--brand-color6);
 	transition: var(--transition);
-}
-.envelope svg {
-	position: relative;
-	top: 2px;
-	right: 10px;
-}
-.mail {
-	margin-right: 50px;
+	position: absolute;
+	top: 0px;
+	right: 112px;
 }
 .icon-envelope {
-	fill: var(--brand-color6);
 	transition: var(--transition);
+	position: absolute;
+	top: 2px;
+	right: 142px;
+}
+
+.mail {
+	@media screen and (min-width: 768px) {
+		margin-right: 0px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-right: 50px;
+	}
+}
+
+.phone {
+	@media screen and (min-width: 768px) {
+		padding-left: 0px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-left: 0px;
+	}
 }

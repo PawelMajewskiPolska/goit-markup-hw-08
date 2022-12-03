@@ -1,6 +1,9 @@
 .logo-header {
 	margin-right: 0;
 
+	@media screen and (min-width: 768px) {
+		margin-right: 83px;
+	}
 	@media screen and (min-width: 1200px) {
 		margin-right: 93px;
 	}
@@ -8,6 +11,7 @@
 
 .logo {
 	text-decoration: none;
+
 	&__web {
 		font-family: var(--font-family1);
 		font-size: 26px;
@@ -16,6 +20,10 @@
 		letter-spacing: 0.03em;
 		color: var(--brand-color1);
 		transition: var(--transition);
+
+		@media screen and (min-width: 768px) {
+			font-size: 24px;
+		}
 	}
 	&__studio {
 		font-family: var(--font-family1);
@@ -25,6 +33,10 @@
 		letter-spacing: 0.03em;
 		color: var(--brand-color2);
 		transition: var(--transition);
+
+		@media screen and (min-width: 768px) {
+			font-size: 24px;
+		}
 	}
 	&__studio--footer {
 		color: var(--brand-color3);
