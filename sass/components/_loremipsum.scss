@@ -1,7 +1,74 @@
 .loremipsum__icon {
+	height: 100%;
+	width: 70px;
 	background-color: var(--brand-color7);
 	border-radius: 4px;
 }
+
+.loremipsum__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	background-color: var(--brand-color7);
+	padding-top: 25px;
+	max-width: 450px;
+	height: 120px;
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 270px;
+	}
+}
+
+.loremipsum {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	gap: 30px;
+	margin-bottom: 0;
+	margin-top: 0;
+
+	@media screen and (min-width: 768px) {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+.loremipsum__wrap {
+	flex-basis: calc((100% - 60px) / 2);
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 120px) / 4);
+	}
+}
+.loremipsum__title {
+	font-family: var(--font-family2);
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: var(--brand-color5);
+	margin-bottom: 0;
+	margin-top: 30px;
+	text-align: center;
+	@media screen and (min-width: 768px) {
+		text-align: start;
+	}
+}
+.loremipsum__text {
+	flex-basis: auto;
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--brand-color6);
+}
+
+/* dla tabletu
 .loremipsum {
 	display: flex;
 	flex-direction: row;
@@ -30,3 +97,4 @@
 	letter-spacing: 0.03em;
 	color: var(--brand-color6);
 }
+ */

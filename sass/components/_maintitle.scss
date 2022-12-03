@@ -2,29 +2,88 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--brand-color3);
+	padding-bottom: 118px;
 	background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
 		),
-		url("./../images/header.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
+		url("./../images/header-mobile-x1.jpg");
 
-	color: var(--brand-color3);
-	padding-bottom: 200px;
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url("./../images/header-mobile-x2.jpg");
+	}
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url("./../images/header-tablet-x1.jpg");
+		@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url("./../images/header-tablet-x2.jpg");
+		}
+		@media screen and (min-width: 1200px) {
+			padding-bottom: 200px;
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url("./../images/header-desktop-x1.jpg");
+			@media (min-device-pixel-ratio: 2),
+				(min-resolution: 192dpi),
+				(min-resolution: 2dppx) {
+				background-image: linear-gradient(
+						rgba(47, 48, 58, 0.4),
+						rgba(47, 48, 58, 0.4)
+					),
+					url("./../images/header-desktop-x2.jpg");
+			}
+		}
+	}
 }
 
 .main-title__text {
 	font-family: var(--font-family2);
-	font-size: 44px;
+	margin-bottom: 30px;
+	padding-top: 118px;
 	font-weight: 900;
-	line-height: 1.36;
 	letter-spacing: 0.06em;
 	color: var(--brand-color3);
 	text-align: center;
-	max-width: 696px;
 	align-self: center;
-	padding-top: 200px;
-	margin-bottom: 30px;
-	margin-top: 0;
+	line-height: 1.61;
+	/* margin-left: auto;
+	margin-right: auto; */
+
+	@media screen and (min-width: 320px) {
+		font-size: 26px;
+		margin-top: 0;
+		margin-left: 58px;
+		margin-right: 58px;
+		width: 76%;
+	}
+	@media screen and (min-width: 768px) {
+		width: 47%;
+	}
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: 1.36;
+		padding-top: 200px;
+		width: 696px;
+	}
 }
