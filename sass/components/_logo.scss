@@ -1,0 +1,40 @@
+.logo-header {
+	margin-right: 0;
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+	}
+}
+
+.logo {
+	text-decoration: none;
+	&__web {
+		font-family: var(--font-family1);
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 1.19;
+		letter-spacing: 0.03em;
+		color: var(--brand-color1);
+		transition: var(--transition);
+	}
+	&__studio {
+		font-family: var(--font-family1);
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 1.19;
+		letter-spacing: 0.03em;
+		color: var(--brand-color2);
+		transition: var(--transition);
+	}
+	&__studio--footer {
+		color: var(--brand-color3);
+		transition: var(--transition);
+	}
+	&__studio:focus {
+		color: var(--brand-color1);
+	}
+
+	&__studio:hover {
+		color: var(--brand-color1);
+	}
+}

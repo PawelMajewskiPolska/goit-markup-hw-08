@@ -1,0 +1,32 @@
+.loremipsum__icon {
+	background-color: var(--brand-color7);
+	border-radius: 4px;
+}
+.loremipsum {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	gap: 30px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.loremipsum__title {
+	font-family: var(--font-family2);
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: var(--brand-color5);
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+.loremipsum__text {
+	flex-basis: auto;
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--brand-color6);
+}

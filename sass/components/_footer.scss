@@ -1,0 +1,39 @@
+.footer-background {
+	background-color: var(--brand-color4);
+	color: var(--brand-color3);
+}
+.footer-logo {
+	padding-top: 60px;
+	margin: 0;
+}
+.footer-details {
+	display: flex;
+	justify-content: flex-start;
+}
+.footer-social-links {
+	padding-top: 72px;
+	padding-bottom: 100px;
+	margin-left: 70px;
+}
+.mail-footer {
+	padding-top: 9px;
+}
+.phone-footer {
+	padding-top: 9px;
+}
+.join-us {
+	font-family: var(--font-family2);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.03rem;
+	line-height: 1, 17;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.mail-footer__link:focus,
+.mail-footer__link:hover,
+.phone-footer__link:focus,
+.phone-footer__link:hover {
+	color: var(--brand-color1);
+}
