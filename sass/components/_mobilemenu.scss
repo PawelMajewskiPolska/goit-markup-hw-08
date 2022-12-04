@@ -90,7 +90,10 @@
 .open-mobile-menu {
 	background-color: transparent;
 	border: none;
-	cursor: pointer;
+
+	&:hover {
+		fill: var(--brand-color1);
+	}
 
 	@media screen and (min-width: 768px) {
 		display: none;

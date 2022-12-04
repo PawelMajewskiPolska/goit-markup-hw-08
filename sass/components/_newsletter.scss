@@ -2,23 +2,38 @@
 	position: absolute;
 	top: 13px;
 	right: 28px;
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 }
+
+.newsletter__icon-send-mobile {
+	position: absolute;
+	top: 85px;
+	right: 152px;
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
+
 .newsletter__form {
 	position: relative;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 
 	& input:focus {
 		outline: 0;
 	}
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+	}
 }
 
 .newsletter__input {
-	width: 358px;
+	width: 450px;
 	color: var(--brand-color3);
 	background: transparent;
-	margin-right: 12px;
 	padding-block: 14px;
 	padding-left: 16px;
 	padding-right: 16px;
@@ -36,12 +51,25 @@
 		letter-spacing: 0.03em;
 		color: rgba(255, 255, 255, 0.6);
 	}
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+		margin-right: 12px;
+	}
 }
 
 .newsletter {
-	margin-left: 78px;
-	padding-top: 72px;
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: 1200px) {
+		flex-direction: column;
+		margin-left: 78px;
+		padding-top: 12px;
+	}
+	@media screen and (max-width: 1199px) {
+		align-items: center;
+	}
 }
+
 .newsletter__signup {
 	font-family: var(--font-family2);
 	font-weight: 700;

@@ -1,4 +1,4 @@
-.address {
+.address__street {
 	font-family: var(--font-family2);
 	font-size: 14px;
 	line-height: 1.71;
@@ -7,9 +7,38 @@
 	color: var(--brand-color3);
 	padding-top: 20px;
 	margin: 0;
+	@media screen and (min-width: 768px) {
+		padding-left: 55px;
+	}
+	@media screen and (min-width: 768px) {
+		padding-left: 0;
+	}
+}
+.address {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media screen and (min-width: 768px) {
+	}
+	@media screen and (min-width: 1200px) {
+		align-items: flex-start;
+		padding-left: 0;
+	}
 }
 
 .company-details {
 	padding-bottom: 60px;
 	margin: 0;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 142px;
+	}
+	@media screen and (min-width: 1200px) {
+		align-items: flex-start;
+		margin-right: 70px;
+		padding-bottom: 0;
+	}
 }

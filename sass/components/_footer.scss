@@ -1,25 +1,69 @@
 .footer-background {
 	background-color: var(--brand-color4);
 	color: var(--brand-color3);
+	padding-top: 60px;
+	padding-bottom: 135px;
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 60px;
+	}
+}
+.footer-desktop {
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+		display: flex;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
 }
 .footer-logo {
-	padding-top: 60px;
-	margin: 0;
+	display: flex;
+	justify-content: center;
+	@media screen and (min-width: 768px) {
+		margin: 0;
+		justify-content: flex-start;
+	}
+	@media screen and (min-width: 1200px) {
+		padding-left: 0;
+	}
 }
+
 .footer-details {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		justify-content: center;
+	}
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		justify-content: start;
+		padding: 0;
+	}
 }
+
 .footer-social-links {
-	padding-top: 72px;
-	padding-bottom: 100px;
-	margin-left: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 60px;
+	@media screen and (min-width: 768px) {
+		padding-top: 5px;
+	}
+	@media screen and (min-width: 1200px) {
+		justify-content: flex-start;
+		padding-top: 12px;
+		padding-bottom: 0;
+		/* margin-left: 70px; */
+	}
 }
 .mail-footer {
 	padding-top: 9px;
 }
 .phone-footer {
 	padding-top: 9px;
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
 }
 .join-us {
 	font-family: var(--font-family2);
