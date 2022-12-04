@@ -15,10 +15,10 @@
 	max-width: 450px;
 	height: 120px;
 	@media screen and (min-width: 768px) {
-		width: 354px;
+		min-width: 354px;
 	}
-	@media screen and (min-width: 768px) {
-		width: 270px;
+	@media screen and (min-width: 1200px) {
+		min-width: 270px;
 	}
 }
 
@@ -41,7 +41,7 @@
 
 .loremipsum__wrap {
 	flex-basis: calc((100% - 60px) / 2);
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1200px) {
 		flex-basis: calc((100% - 120px) / 4);
 	}
 }

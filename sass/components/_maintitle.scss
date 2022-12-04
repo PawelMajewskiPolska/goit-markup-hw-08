@@ -75,15 +75,15 @@
 		margin-top: 0;
 		margin-left: 58px;
 		margin-right: 58px;
-		width: 76%;
+		max-width: 364px;
 	}
 	@media screen and (min-width: 768px) {
-		width: 47%;
+		max-width: 384px;
 	}
 	@media screen and (min-width: 1200px) {
 		font-size: 44px;
 		line-height: 1.36;
 		padding-top: 200px;
-		width: 696px;
+		max-width: 696px;
 	}
 }

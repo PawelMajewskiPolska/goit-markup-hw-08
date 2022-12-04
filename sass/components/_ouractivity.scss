@@ -39,3 +39,9 @@
 	text-align: center;
 	padding-block: 27px;
 }
+
+.mobile-tablet-hidden {
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+}
