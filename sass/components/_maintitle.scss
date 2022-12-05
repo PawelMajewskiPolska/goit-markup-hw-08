@@ -75,7 +75,7 @@
 		margin-top: 0;
 		margin-left: 58px;
 		margin-right: 58px;
-		max-width: 364px;
+		width: 384px;
 	}
 	@media screen and (min-width: 768px) {
 		max-width: 384px;
@@ -84,6 +84,6 @@
 		font-size: 44px;
 		line-height: 1.36;
 		padding-top: 200px;
-		max-width: 696px;
+		min-width: 696px;
 	}
 }

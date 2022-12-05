@@ -26,7 +26,7 @@
 .modal__feedback {
 	display: flex;
 	border: none;
-	width: 416px;
+	width: 250px;
 	height: 96px;
 }
 
@@ -48,26 +48,32 @@
 }
 .modal__legal-checkbox {
 	position: relative;
-	margin-left: 79px;
+	margin-left: 67px;
 	font-family: var(--font-family2);
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--brand-color6);
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		margin-left: 79px;
+	}
 }
 
 .modal {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	width: 528px;
+	width: 450px;
 	margin: 0 auto;
 	background-color: var(--brand-color3);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+	}
 }
-
 .modal__button {
 	display: block;
 	border: none;
@@ -99,8 +105,8 @@
 }
 
 .modal__fieldset--text {
-	width: 422px;
 	margin-left: 40px;
+	margin-right: 40px;
 	margin-bottom: 20px;
 	padding-block: 11px;
 	padding-left: 15px;
@@ -181,10 +187,13 @@
 .policy {
 	font-family: var(--font-family2);
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--brand-color1);
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+	}
 }
 
 .button--modalsend {
