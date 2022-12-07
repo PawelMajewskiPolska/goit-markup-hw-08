@@ -67,14 +67,17 @@
 	text-align: center;
 	align-self: center;
 	line-height: 1.61;
-	/* margin-left: auto;
-	margin-right: auto; */
 
 	@media screen and (min-width: 320px) {
 		font-size: 26px;
 		margin-top: 0;
 		margin-left: 58px;
 		margin-right: 58px;
+		width: 310px;
+	}
+	@media screen and (min-width: 400px) {
+		font-size: 26px;
+		margin-top: 0;
 		width: 384px;
 	}
 	@media screen and (min-width: 768px) {

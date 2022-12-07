@@ -9,21 +9,22 @@
 		border-color: var(--brand-color1);
 	}
 	height: 92px;
-	width: 210px;
+	max-width: 210px;
 	padding-top: 16px;
 	padding-left: 52px;
 
 	@media screen and (min-width: 768px) {
-		width: 226px;
+		max-width: 226px;
 		padding-left: 61px;
 	}
 	@media screen and (min-width: 1200px) {
-		width: 170px;
+		max-width: 170px;
 		padding-left: 32px;
 	}
 }
 .customers {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	list-style: none;
 	gap: 30px;

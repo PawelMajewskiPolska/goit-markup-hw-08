@@ -17,13 +17,18 @@
 }
 .button--newsletter {
 	padding-right: 76px;
-	@media screen and (max-width: 1198px) {
+
+	@media screen and (max-width: 480px) {
+		position: absolute;
+		right: 45px;
+		top: 70px;
+	}
+	@media screen and (min-width: 480px) and (max-width: 1199px) {
 		position: absolute;
 		right: 125px;
 		top: 70px;
 	}
 }
-
 .button--middle {
 	padding-right: 42px;
 	align-self: center;
