@@ -5,4 +5,7 @@
 	letter-spacing: 0.03em;
 	color: var(--brand-color5);
 	text-align: center;
+	@media screen and (max-width: 1199px) {
+		font-size: 28px;
+	}
 }
